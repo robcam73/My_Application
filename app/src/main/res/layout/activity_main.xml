@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffdfeaf1">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,67 +12,97 @@
         android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="40dp"
-        android:paddingBottom="30dp" />
+        android:textSize="@dimen/my_title_text_size"
+        android:paddingBottom="30dp"
+        android:textColor="#ff008fff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Spotify Streamer"
+        android:background="@color/my_button_colour"
         android:id="@+id/button"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:width="250dp"
+        android:width="@dimen/my_button_width"
         android:onClick="sendMessage"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/my_button_text_size"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Scores App"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical"
         android:id="@+id/button2"
+        android:background="@color/my_button_colour"
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
+        android:width="@dimen/my_button_width"
+        android:textSize="@dimen/my_button_text_size"
         android:onClick="sendMessage"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Library App"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical"
+        android:background="@color/my_button_colour"
+        android:textSize="@dimen/my_button_text_size"
         android:id="@+id/button3"
+        android:width="@dimen/my_button_width"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:onClick="sendMessage"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="wrap_content"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:textSize="@dimen/my_button_text_size"
+        android:text="Build it Bigger"
+        android:background="@color/my_button_colour"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
+        android:width="@dimen/my_button_width"
         android:onClick="sendMessage"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:textSize="@dimen/my_button_text_size"
+        android:text="Xyz Reader"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical"
+        android:background="@color/my_button_colour"
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
+        android:width="@dimen/my_button_width"
         android:layout_centerHorizontal="true"
         android:onClick="sendMessage"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Capstone: My Own App"
+        android:paddingTop="@dimen/my_button_padding_vertical"
+        android:paddingBottom="@dimen/my_button_padding_vertical"
+        android:textSize="@dimen/my_button_text_size"
         android:id="@+id/button6"
         android:layout_below="@+id/button5"
         android:onClick="sendMessage"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:width="@dimen/my_button_width"
+        android:background="#ffff3975" />
 
 </RelativeLayout>
